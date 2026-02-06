@@ -85,7 +85,8 @@ class MyApplication : Application() {
         initScreenNameViewer(this) {
             settings {
                 debugModeCondition = BuildConfig.DEBUG
-                enableCondition = PreferenceManager.getDefaultSharedPreferences(this@MyApplication)
+                enableCondition = PreferenceManager
+                        .getDefaultSharedPreferences(this@MyApplication)
                         .getBoolean("debug_overlay_enabled", true)
             }
 
